@@ -7,9 +7,9 @@ The dataset used for this Thesis is a real dataset from "Hospital Universitari A
 
 This repository contains the following codes:
 
-1. **Preprocessing.ipynb**: Jupyter notebook in Python with the preprocessing steps followed to explore, clean and prepare the data for the Survival Analysis.
-2. **survival_analysis.html**: Rmarkdown file containing the R code for the traditional Survival Analysis (kaplan Meier Curves, Cox and Weibull models).
-3. **ML_Survival_Analysis.ipynb**: Juputer notebook in Python with the ML-based survival analysis (Random Survival Forest, Gradient Boosting Survival and DeepSurv-based model)
+1. **Preprocessing-MT.ipynb**: Jupyter notebook in Python with the preprocessing steps followed to explore, clean and prepare the data for the Survival Analysis.
+2. **survival_analysis-MT.html**: Rmarkdown file containing the R code for the traditional Survival Analysis (kaplan Meier Curves, Cox and Weibull models).
+3. **ML_Survival_Analysis-MT.ipynb**: Juputer notebook in Python with the ML-based survival analysis (Random Survival Forest, Gradient Boosting Survival and DeepSurv-based model)
 
 All the libraries, tables and plots can be found inside the code.
 
