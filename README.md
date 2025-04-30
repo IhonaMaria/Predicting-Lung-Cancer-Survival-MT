@@ -7,13 +7,13 @@ The dataset used for this Thesis is a real dataset from "Hospital Universitari A
 
 This repository contains the following codes:
 
-- Preprocessing.ipynb : Jupyter notebook in Python with the preprocessing steps followed to explore, clean and prepare the data for the Survival Analysis.
-- survival_analysis.html : Rmarkdown file containing the R code for the traditional Survival Analysis (kaplan Meier Curves, Cox and Weibull models).
-- ML_Survival_Analysis.ipynb : Juputer notebook in Python with the ML-based survival analysis (Random Survival Forest, Gradient Boosting Survival and DeepSurv-based model)
+1. **Preprocessing.ipynb**: Jupyter notebook in Python with the preprocessing steps followed to explore, clean and prepare the data for the Survival Analysis.
+2. **survival_analysis.html**: Rmarkdown file containing the R code for the traditional Survival Analysis (kaplan Meier Curves, Cox and Weibull models).
+3. **ML_Survival_Analysis.ipynb**: Juputer notebook in Python with the ML-based survival analysis (Random Survival Forest, Gradient Boosting Survival and DeepSurv-based model)
 
 All the libraries, tables and plots can be found inside the code.
 
-## Preprocessing
+## 1. Preprocessing
 The original dataset was in Excel format and contained 1,696 lung cancer patients and 27 variables. In summary, the processing steps implemented have been:
 
 - Cleaning and Filtering : Removed irrelevant variables and those with high null values. Excluded patients without confirmed lung cancer as cause of death (based on ICD codes).
@@ -28,7 +28,7 @@ The final dataset contained 1,451 patients and the following curated variables:
 - Tobacco: Whether the patient smoked or not.
 - Age group categories: [0-49], [50-59] , [60-69], [70-79], [80-~]
 
-## Traditional Survival Analysis
+## 2. Traditional Survival Analysis
 Traditional survival analysis techniques were applied to evaluate the overall survival (OS) among lung cancer patients, defined as the time in months from diagnosis to death or censoring. The analysis included the full dataset as well as male- and female-only subsets to explore sex-specific survival trends and confounding effects. 
 This thesis explored non-parametric, semi-parametric and parametric survival models, as well as bivariate and multivariate models. 
 
@@ -43,7 +43,7 @@ This section contains:
 
 Moreover, traditional models were compared between them using the Akaike Information Criterion (AIC).
 
-## ML-based Survival Analysis
+## 3. ML-based Survival Analysis
 ML models adapted for Survival Analysis were implemented to see if they could outperform traditional models. 
 A nested 5-fold cross-validation was used for hyperparameter optimization and evaluation, with the concordance index (C-index)  as the primary performance metric. The final performance was reported as mean ± std of C-index.
 
@@ -77,6 +77,6 @@ Comparison results are summarized in the following table:
 ## Conclusions
 It has been observed that there is no major differences between the performance of traditional models and ML models in this dataset. It is true that ML models stand out when there is high-dimensional data with a lot of predictors and non-linear complex relations. Therefore, the size of the present dataset may have hidden the power of ML models for survival. 
 
-As a rule of thumb, for a given survival dataset with a small number of predictors, traditional models such as Cox should be considered first, as they are more interpretable, computationally faster and have a wide clinical acceptance, 
+As a rule of thumb, for a given survival dataset with a small number of predictors, traditional models such as Cox should be considered first, as they are more interpretable, computationally faster and have a wide clinical acceptance.
 
 
