@@ -3,7 +3,7 @@ This repository contains the code developed for the Master Thesis (MT).
 The objective of the MT was to predict the survival and key risk factors in lung cancer patients and to compare the performance of traditional statistical models for Survival Analysis (Cox and Weibull models) with Machine-Learning based models (Random Survival Forest, Gradient Boosting Survival and Neural Network-based model). 
 The comparison was assessed through the Concordance-Index, the Integrated Brier Score and feature importance plots. 
 
-The dataset used for this Thesis is a real dataset from "Hospital Universitari Arnau de Vilanova" (Lleida, Spain), and contains patients diagnosed with lung cancer from 2012 to 2021. Due to privacy concerns, patient data is not shared in this repository. 
+The dataset used for this Thesis is a real dataset from two hospitals from Lleida (Spain), and contains patients diagnosed with lung cancer from 2012 to 2021. Due to privacy concerns, patient data is not shared in this repository. 
 
 This repository contains the following codes:
 
